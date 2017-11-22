@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+	http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+	<kcfgfile name=""/>
+
+	<group name="config">
+		<entry name="update_interval" type="Int">
+			<default>5</default>
+		</entry>
+		<entry name="warning_threshold" type="Int">
+			<default>7</default>
+		</entry>
+		<entry name="warning_color" type="String">
+			<default>red</default>
+		</entry>
+		<entry name="font_size" type="Int">
+			<default>50</default>
+		</entry>
+		<entry name="timestamp_command" type="String">
+			<default>cut -f 1 -d" " /usr/portage/metadata/timestamp.x</default>
+		</entry>
+	</group>
+</kcfg>
+
