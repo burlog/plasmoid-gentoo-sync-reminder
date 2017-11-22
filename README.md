@@ -1,5 +1,5 @@
 # plasmoid-gentoo-sync-reminder
-KDE5 Plasmoid that show days since last portage sync
+KDE5 Plasmoid that shows days since last portage sync
 
 ## Dependencies
 
