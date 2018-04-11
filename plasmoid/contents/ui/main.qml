@@ -55,7 +55,7 @@ Item {
 
         function days_since_sync() {
             Date.prototype.getUnixTime = function() { return this.getTime()/1000|0 }
-            var portage_unix_timestamp = new Date(portage_timestamp_raw_string).getUnixTime()
+            var portage_unix_timestamp = new Date(executable.portage_timestamp_raw_string).getUnixTime()
 
             var now = Math.floor(Date.now() / 1000)
             var days = Math.floor((now - portage_unix_timestamp) / 86400)
@@ -73,7 +73,7 @@ Item {
             return "<b>Portage Sync Reminder</b>"
         }
         subText: {
-            return "<b>Portage sync timestamp</b>: " + new Date(executable.timestamp)
+            return "<b>Portage sync timestamp</b>: " + executable.portage_timestamp_raw_string
         }
     }
 
