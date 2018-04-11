@@ -51,7 +51,7 @@ Item {
         }
 
         QtControls.Label {
-            text: i18n("Warnging threshold:")
+            text: i18n("Warning threshold:")
             Layout.alignment: Qt.AlignRight
         }
 
