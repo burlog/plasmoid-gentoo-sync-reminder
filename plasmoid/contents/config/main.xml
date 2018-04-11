@@ -19,7 +19,7 @@
 			<default>50</default>
 		</entry>
 		<entry name="timestamp_command" type="String">
-			<default>cut -f 1 -d" " /usr/portage/metadata/timestamp.x</default>
+			<default>cat /usr/portage/metadata/timestamp.chk</default>
 		</entry>
 	</group>
 </kcfg>
