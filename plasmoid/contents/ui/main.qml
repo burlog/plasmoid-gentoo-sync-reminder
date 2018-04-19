@@ -48,7 +48,7 @@ Item {
             if (data["exit code"] == 0) {
                 portage_timestamp_raw_string = data["stdout"]
             } else {
-                portage_timestamp_raw_string = "no data"
+                portage_timestamp_raw_string = "0"
             }
             timestampChanged()
         }
